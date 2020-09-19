@@ -1,0 +1,109 @@
+.darkArea {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: none;
+  z-index: 100;
+}
+
+.sideBar {
+  border: none;
+  height: 7vh;
+  width: 200px;
+  border-radius: 40px 0 0 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  right: 0px;
+  top: 50px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sideBar__icon {
+  font-size: 30px;
+  margin: 0 0 0 7px;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sideBar__menu {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0 50px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid white;
+}
+
+.sideBarMenu {
+  height: 91vh;
+  width: 300px;
+  border-radius: 40px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+  z-index: 100;
+}
+
+.sideBarMenu__list {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.sideBarMenu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sideBarMenu__item {
+  font-size: 1.6rem;
+  margin: 20px 30px 0 0;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.darkArea--active {
+  display: block;
+}
+
+.sideBarMenu--active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.sideBar--active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.sideBar__icon--unactive {
+  opacity: 0;
+}
+/*# sourceMappingURL=sidebar.css.map */

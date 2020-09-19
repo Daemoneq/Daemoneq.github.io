@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.firstScreen {
+  height: 100vh;
+  background-image: url(img/BackgroundPhoneImg/firstScreenBg-pexels-tetyana.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.topBar {
+  position: relative;
+  top: 30px;
+}
+
+.topBar__logo {
+  margin: 0 0 0 20px;
+}
+
+.topBar__logoImg {
+  height: 100px;
+  width: 170px;
+}
+
+.topBar__menuContainer {
+  display: none;
+}
+
+.centerInfo {
+  height: 600px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 20px;
+}
+
+.centerInfo__title {
+  font-size: 1.8rem;
+  margin: 80px 0 0 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.centerInfo__biggerTitle {
+  font-size: 2.4rem;
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.centerInfo__text {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 15px 0 0 0;
+  width: 200px;
+}
+
+.centerInfo__button {
+  margin: 30px 0 0 0;
+  font-size: 1.6rem;
+  height: 56px;
+  width: 247px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.secondScreen {
+  height: 100vh;
+  background-image: url(img/BackgroundPhoneImg/secondScreenBg-pexels-jayant-kulkarni.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.about {
+  height: 530px;
+  position: relative;
+  top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__title {
+  font-size: 2rem;
+}
+
+.about__text {
+  font-size: 1.1rem;
+  width: 270px;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.thirdScreen {
+  height: 100vh;
+  background-image: url(img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
