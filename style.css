@@ -16,6 +16,12 @@ li {
   list-style-type: none;
 }
 
+@media (max-width: 330px) {
+  * {
+    font-size: 13px;
+  }
+}
+
 .firstScreen {
   height: 100vh;
   background-image: url(img/BackgroundPhoneImg/firstScreenBg-pexels-tetyana.jpg);
@@ -23,30 +29,23 @@ li {
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-}
-
-.topBar {
-  position: relative;
-  top: 30px;
-}
-
-.topBar__logo {
-  margin: 0 0 0 20px;
-}
-
-.topBar__logoImg {
-  height: 100px;
-  width: 170px;
-}
-
-.topBar__menuContainer {
-  display: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 25% 70% 5%;
+      grid-template-rows: 25% 70% 5%;
 }
 
 .centerInfo {
-  height: 600px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  height: 100%;
   width: 100%;
-  margin: 0px auto 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,13 +56,10 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  bottom: 20px;
 }
 
 .centerInfo__title {
   font-size: 1.8rem;
-  margin: 80px 0 0 0;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -85,12 +81,30 @@ li {
 .centerInfo__button {
   margin: 30px 0 0 0;
   font-size: 1.6rem;
-  height: 56px;
-  width: 247px;
+  height: 12%;
+  width: 80%;
   border-radius: 20px;
   border: none;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.topBar {
+  position: relative;
+  top: 30px;
+}
+
+.topBar__logo {
+  margin: 0 0 0 20px;
+}
+
+.topBar__logoImg {
+  height: 100px;
+  width: 170px;
+}
+
+.topBar__menuContainer {
+  display: none;
 }
 
 .secondScreen {
@@ -100,33 +114,35 @@ li {
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 5% 75% 20%;
+      grid-template-rows: 5% 75% 20%;
 }
 
 .about {
-  height: 530px;
-  position: relative;
-  top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
 }
 
 .about__title {
-  font-size: 2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  margin: 20px 0 0 0;
 }
 
 .about__text {
-  font-size: 1.1rem;
-  width: 270px;
-  text-align: center;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
+  font-size: 1.15rem;
 }
 
 .thirdScreen {
@@ -136,5 +152,77 @@ li {
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 15% 35% 50%;
+      grid-template-rows: 15% 35% 50%;
+}
+
+.prdoucts {
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: pink;
+}
+
+.productsBar__list {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 20px 20px 0;
+  height: 70px;
+  width: 300px;
+  position: relative;
+  top: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateX(-240px);
+          transform: translateX(-240px);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.productsBar__img {
+  width: 50px;
+  height: 50px;
+}
+
+.productsBar__button {
+  height: 25px;
+  width: 15px;
+  background-color: black;
+}
+
+.productsBar__list--active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.fourthScreen {
+  height: 100vh;
+  background-image: url(img/BackgroundPhoneImg/fourthScreenBgPhone-pexels-scott.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 15% 35% 50%;
+      grid-template-rows: 15% 35% 50%;
 }
 /*# sourceMappingURL=style.css.map */

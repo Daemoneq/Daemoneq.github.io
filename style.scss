@@ -12,7 +12,11 @@ a{
 }li{
     list-style-type: none;
 }
-
+@media (max-width: 330px){
+    *{
+        font-size: 13px;
+    }
+}
 
 
 // ~~~~~~~~~~~~~FIRST SCREEN~~~~~~~~~~~~~
@@ -21,8 +25,48 @@ a{
     height: 100vh;
     background-image: url(img/BackgroundPhoneImg/firstScreenBg-pexels-tetyana.jpg);
     background-size: 100% 100%;        background-size: cover;
-    background-position: right center;        background-repeat: no-repeat;   
+    background-position: right center;        background-repeat: no-repeat;
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 25% 70% 5%;
 }
+
+.centerInfo{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }&__biggerTitle{
+        font-size: 2.4rem;
+        display: block;
+        text-align: right;
+        text-transform: uppercase;
+    }&__text{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 15px 0 0 0;
+        width: 200px;
+    }&__button{
+        margin: 30px 0 0 0;
+        font-size: 1.6rem;
+        height: 12%;
+        width: 80%;
+        border-radius: 20px;
+        border: none;
+        color: $secondFontColor;
+        background-color: rgba(0,0,0,.7);
+    }
+}
+
+
 
 // ONLY ON DESKTOP
 .topBar{
@@ -40,41 +84,6 @@ a{
 
 //FIRST SCREEN -- main info
 
-.centerInfo{
-    height: 600px;
-    width: 100%;
-    margin: 0px auto 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 20px;
-    &__title{
-        font-size: 1.8rem;
-        margin: 80px 0 0 0;
-        font-weight: 400;
-        text-transform: uppercase;
-    }&__biggerTitle{
-        font-size: 2.4rem;
-        display: block;
-        text-align: right;
-        text-transform: uppercase;
-    }&__text{
-        font-size: 1.3rem;
-        text-align: center;
-        margin: 15px 0 0 0;
-        width: 200px;
-    }&__button{
-        margin: 30px 0 0 0;
-        font-size: 1.6rem;
-        height: 56px;
-        width: 247px;
-        border-radius: 20px;
-        border: none;
-        color: $secondFontColor;
-        background-color: rgba(0,0,0,.7);
-    }
-}
 
 
 // ~~~~~~~~~~~~~SECOND SCREEN~~~~~~~~~~~~~
@@ -83,24 +92,26 @@ a{
     height: 100vh;
     background-image: url(img/BackgroundPhoneImg/secondScreenBg-pexels-jayant-kulkarni.jpg);
     background-size: 100% 100%;        background-size: cover;
-    background-position: right center;        background-repeat: no-repeat;   
+    background-position: right center;        background-repeat: no-repeat;  
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5% 75% 20%;
 }
 
-
 .about{
-height: 530px;
-position: relative;
-top: 70px;
-display: flex;
-flex-direction: column;
-align-items: center;
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
     &__title{
-        font-size: 2rem;
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 20px 0 0 0;
     }&__text{
-        font-size: 1.1rem;
-        width: 270px;
-        text-align: center;
-        margin: 40px 0 0 0 ;
+        margin: 20px 0 0 0;
+        font-size: 1.15rem;
     }
 }
 
@@ -112,6 +123,57 @@ align-items: center;
     background-image: url(img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
     background-size: 100% 100%;        background-size: cover;
     background-position: left center;        background-repeat: no-repeat; 
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 15% 35% 50%;
 }
 
+.prdoucts{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: pink;
+}
+
+.productsBar{
+    &__list{
+        background-color: rgba(0,0,0,.3);
+        border-radius: 0 20px 20px 0;
+        height: 70px;
+        width: 300px;   
+        position: relative;
+        top: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-240px);
+        transition: transform .5s ease-in-out;
+    }&__items{
+
+    }&__img{
+        width: 50px;
+        height: 50px;
+    }&__button{
+        height: 25px;
+        width: 15px;
+        background-color: black;
+    }
+}
+
+.productsBar__list--active{
+    transform: translateX(0px);
+}
 // ~~~~~~~~~~~~~FOURTH  SCREEN~~~~~~~~~~~~~
+
+.fourthScreen{
+    height: 100vh;
+    background-image: url(img/BackgroundPhoneImg/fourthScreenBgPhone-pexels-scott.jpg);
+    background-size: 100% 100%;        background-size: cover;
+    background-position: left center;        background-repeat: no-repeat; 
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 15% 35% 50%;
+}
