@@ -129,12 +129,36 @@ a{
     grid-template-rows: 15% 35% 50%;
 }
 
-.prdoucts{
+
+
+.products{
     height: 100%;
     width: 100%;
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: pink;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    &__titlePhoto{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }&__photo{
+        height: 50px;
+        width: 50px;
+    }&__title{
+        font-size: 2rem;
+        text-align: left;
+    }&__titleContinue{
+        font-size: 1.2rem;
+        display: block;
+    }&__text{
+        margin: 30px auto 0 auto;
+        text-align: center;
+        width: 80%;
+    }
 }
 
 .productsBar{

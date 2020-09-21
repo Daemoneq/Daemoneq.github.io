@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sidebar.css">
     <title>Document</title>
@@ -39,6 +40,8 @@
     </nav>
 
     <!-- MAIN APP -->
+
+    <!-- FIRST SCREEN -->
     <div class="firstScreen">
         <!-- TOPBAR -->
         <nav class="topBar">
@@ -82,6 +85,8 @@
             </button>
         </section>
     </div>
+
+    <!-- SECOND SCREEN -->
     <div class="secondScreen">
         <section class="about">
             <h2 class="about__title">
@@ -97,23 +102,110 @@
             </p>
         </section>
     </div>
-    <div class="thirdScreen">
-        <section class="prdoucts">
 
+    <!-- THIRD SCREEN -->
+    <div class="thirdScreen">
+        <section class="products">
+
+            <!-- SLIDER -->
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name=radio-btn id="radio1">
+                    <input type="radio" name=radio-btn id="radio2">
+                    <input type="radio" name=radio-btn id="radio3">
+                    <input type="radio" name=radio-btn id="radio4">
+
+                    <div class="slide first">
+                        <div class="slide__content">
+                            <div class="slide__titlePhoto">
+                                <h2 class="slide__title">After Effects</h2>
+                                <img class="slide__photo" src="img/AdobeIcons/aftereffects.png" alt="">
+                            </div>
+                            <h3 class="slide__titleContinue">
+                                Make your photos perfect easly
+                            </h3>
+                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                vulputate fermentum quam. Integer vitae scelerisque dolor, at mattis quam. Class aptent
+                                taciti </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__container">
+                            <div class="slide__content">
+                                <div class="slide__titlePhoto">
+                                    <h2 class="slide__title">illustrator</h2>
+                                    <img class="slide__photo" src="img/AdobeIcons/illustrator.png" alt="">
+                                </div>
+                                <h3 class="slide__titleContinue">
+                                    Make your photos perfect easly
+                                </h3>
+                                <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    vulputate fermentum quam. Integer vitae scelerisque dolor, at mattis quam. Class
+                                    aptent
+                                    taciti </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__container">
+                            <div class="slide__content">
+                                <div class="slide__titlePhoto">
+                                    <h2 class="slide__title">Light Room</h2>
+                                    <img class="slide__photo" src="img/AdobeIcons/lightroom-cc.png" alt="">
+                                </div>
+                                <h3 class="slide__titleContinue">
+                                    Make your photos perfect easly
+                                </h3>
+                                <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    vulputate fermentum quam. Integer vitae scelerisque dolor, at mattis quam. Class
+                                    aptent
+                                    taciti </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__container">
+                            <div class="slide__content">
+                                <div class="slide__titlePhoto">
+                                    <h2 class="slide__title">Expreience Design</h2>
+                                    <img class="slide__photo" src="img/AdobeIcons/xd.png" alt="">
+                                </div>
+                                <h3 class="slide__titleContinue">
+                                    Make your photos perfect easly
+                                </h3>
+                                <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    vulputate fermentum quam. Integer vitae scelerisque dolor, at mattis quam. Class
+                                    aptent
+                                    taciti </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- SLIDER BAR -->
         <nav class="prdouctsBar">
             <ul class="productsBar__list">
                 <li class="productsBar__items">
-                    <img class="productsBar__img" src="img/AdobeIcons/aftereffects.png" alt="">
+                    <label for="radio1" class="manual-btn">
+                        <img class="productsBar__img" src="img/AdobeIcons/aftereffects.png" alt="">
+                    </label>
                 </li>
                 <li class="productsBar__items">
-                    <img class="productsBar__img" src="img/AdobeIcons/aftereffects.png" alt="">
+                    <label for="radio2" class="manual-btn">
+                        <img class="productsBar__img" src="img/AdobeIcons/illustrator.png" alt="">
+                    </label>
                 </li>
                 <li class="productsBar__items">
-                    <img class="productsBar__img" src="img/AdobeIcons/aftereffects.png" alt="">
+                    <label for="radio3" class="manual-btn">
+                        <img class="productsBar__img" src="img/AdobeIcons/lightroom-cc.png" alt="">
+                    </label>
                 </li>
                 <li class="productsBar__items">
-                    <img class="productsBar__img" src="img/AdobeIcons/aftereffects.png" alt="">
+                    <label for="radio4" class="manual-btn">
+                        <img class="productsBar__img" src="img/AdobeIcons/xd.png" alt="">
+                    </label>
                 </li>
                 <li class="productsBar__button">
 
@@ -121,6 +213,8 @@
             </ul>
         </nav>
     </div>
+
+    <!-- FOURTH SCREEN -->
     <div class="fourthScreen"></div>
     <script src="app.js"></script>
 </body>
