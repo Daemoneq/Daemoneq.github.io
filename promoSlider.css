@@ -4,10 +4,6 @@
   overflow: hidden;
 }
 
-.promoSlider__slides input {
-  display: none;
-}
-
 .promoSlider__slides {
   width: 500%;
   height: 100%;
@@ -35,15 +31,19 @@
           align-items: center;
 }
 
-#promoSlider__radio1:checked ~ .first {
-  margin-left: 0;
+.margin1 {
+  margin-left: 0%;
 }
 
-#promoSlider__radio2:checked ~ .first {
+.margin2 {
   margin-left: -20%;
 }
 
-#promoSlider__radio3:checked ~ .first {
+.margin3 {
   margin-left: -40%;
+}
+
+.promotions__navButton--active {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /*# sourceMappingURL=promoSlider.css.map */

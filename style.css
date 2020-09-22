@@ -375,7 +375,23 @@ li {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.promotions__navButton {
+.promotions__navButton1 {
+  width: 20px;
+  height: 20px;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.promotions__navButton2 {
+  width: 20px;
+  height: 20px;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.promotions__navButton3 {
   width: 20px;
   height: 20px;
   border: rgba(0, 0, 0, 0.3) solid 2px;
