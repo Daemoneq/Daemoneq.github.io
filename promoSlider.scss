@@ -1,0 +1,31 @@
+.promoSlider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.promoSlider__slides input{
+    display: none;
+}
+.promoSlider__slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.promoSlider__slide{
+    width: 20%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#promoSlider__radio1:checked ~ .first{
+    margin-left: 0;
+}
+#promoSlider__radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#promoSlider__radio3:checked ~ .first{
+    margin-left: -40%;
+}
+

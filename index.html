@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="promoSlider.css">
     <title>Document</title>
 </head>
 
@@ -215,7 +216,79 @@
     </div>
 
     <!-- FOURTH SCREEN -->
-    <div class="fourthScreen"></div>
+    <div class="fourthScreen">
+        <div class="promotions">
+            <div class="promotions__container">
+                <div class="promoSlider">
+                    <div class="promoSlider__slides">
+                        <!-- HERE -->
+                        <input type="radio" name=radio-btn id="promoSlider__radio1">
+                        <input type="radio" name=radio-btn id="promoSlider__radio2">
+                        <input type="radio" name=radio-btn id="promoSlider__radio3">
+
+                        <div class="promoSlider__slide first">
+                            <h2 class="promotions__title">
+                                Standard
+                            </h2>
+                            <p class="promotions__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate fermentum quam.
+                                Integer
+                                vitae scelerisque dolor
+                            </p>
+                            <button class="promotions__button">
+                                Buy
+                            </button>
+                        </div>
+                        <div class="promoSlider__slide">
+                            <h2 class="promotions__title">
+                                Professional
+                            </h2>
+                            <p class="promotions__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate fermentum quam.
+                                Integer
+                                vitae scelerisque dolor
+                            </p>
+                            <button class="promotions__button">
+                                Buy
+                            </button>
+                        </div>
+                        <div class="promoSlider__slide">
+                            <h2 class="promotions__title">
+                                Demo
+                            </h2>
+                            <p class="promotions__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate fermentum quam.
+                                Integer
+                                vitae scelerisque dolor,
+                            </p>
+                            <button class="promotions__button">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotions__card">
+                <div class="promotions__iconsContainer">
+                    <!-- START -->
+
+
+                    <!-- END -->
+                </div>
+                <div class="promotions__nav">
+                    <label for="promoSlider__radio1">
+                        <div class="promotions__navButton"></div>
+                    </label>
+                    <label for="promoSlider__radio2">
+                        <div class="promotions__navButton"></div>
+                    </label>
+                    <label for="promoSlider__radio3">
+                        <div class="promotions__navButton"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 

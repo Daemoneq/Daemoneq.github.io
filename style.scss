@@ -195,9 +195,76 @@ a{
     height: 100vh;
     background-image: url(img/BackgroundPhoneImg/fourthScreenBgPhone-pexels-scott.jpg);
     background-size: 100% 100%;        background-size: cover;
-    background-position: left center;        background-repeat: no-repeat; 
+    background-position: right center;        background-repeat: no-repeat; 
     
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 15% 35% 50%;
+    grid-template-rows: 10% 50% 40%;
+}
+
+.promotions{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        width: 70%;
+        text-align: center;
+        margin: 0 0 70px 0;
+    }&__title{
+        font-size: 2rem;
+        margin: 5% 0 5% 0;
+        font-weight: normal;
+    }&__text{
+        width: 80%;
+
+    }&__button{
+        padding: 7px 40px;
+        margin: 10% 0 5% 0;
+        border: none;
+        background-color: rgba(69, 155, 82, .7);
+        color: white;
+        box-shadow: rgba(0,0,0,.3) 4px 4px 10px;
+    }
+    &__card{
+        position: absolute;
+        bottom: -50%;
+        left: 15%;
+        height: 70%;
+        width: 70%;
+        background-color: rgba(69, 155, 82, .7);
+    }&__iconsContainer{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }&__4icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }&__icon{
+        width: 50px;
+        height: 50px;
+        margin: 12px;
+    }&__nav{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255,.8);
+    }&__navButton{
+        width: 20px;
+        height: 20px;
+        border: rgba(0,0,0,.3) solid 2px;
+        border-radius: 100%;
+        margin: 10px;
+    }
 }

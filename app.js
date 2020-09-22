@@ -42,3 +42,7 @@ function backSideBar() {
 
 darkArea.addEventListener("click", x)
 sideBar.addEventListener("click", x)
+
+
+// fourthScreenSlider
+
