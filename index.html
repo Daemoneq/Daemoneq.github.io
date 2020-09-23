@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="promoSlider.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/promoSlider.css">
+    <link rel="stylesheet" href="style/desktopMedia.css">
+    <link rel="stylesheet" href="style/firsScreen.css">
+    <link rel="stylesheet" href="style/secondScreen.css">
+    <link rel="stylesheet" href="style/fourthScreen.css">
     <title>Document</title>
 </head>
 
@@ -70,21 +74,25 @@
             </div>
         </nav>
 
-        <section class="centerInfo">
-            <h1 class="centerInfo__title">
-                "make your future
-                <span class="centerInfo__biggerTitle">
-                    simple"
-                </span>
-            </h1>
-            <p class="centerInfo__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate fermentum quam. Integer vitae
-                scelerisque dolor, at mattis quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra
-            </p>
-            <button class="centerInfo__button">
-                get Staretd
-            </button>
-        </section>
+        <div class="test">
+            <section class="centerInfo">
+                <h1 class="centerInfo__title">
+                    "make your future
+                    <span class="centerInfo__biggerTitle">
+                        simple"
+                    </span>
+                </h1>
+                <p class="centerInfo__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate fermentum quam. Integer
+                    vitae
+                    scelerisque dolor, at mattis quam. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra
+                </p>
+                <button class="centerInfo__button">
+                    get Staretd
+                </button>
+            </section>
+        </div>
     </div>
 
     <!-- SECOND SCREEN -->
@@ -272,13 +280,24 @@
                         <div class="promoSlider__slides">
 
                             <div class="promoSlider__slide promoSliderIcons">
-                                1
+                                <div class="promoSlider__iconsContainer">
+                                    <img src="img/AdobeIcons/aftereffects.png" alt="" class="promoSlider__icons">
+                                    <img src="img/AdobeIcons/illustrator.png" alt="" class="promoSlider__icons">
+                                    <img src="img/AdobeIcons/xd.png" alt="" class="promoSlider__icons">
+                                </div>
                             </div>
                             <div class="promoSlider__slide">
-                                2
+                                <div class="promoSlider__iconsContainer promoSlider__iconsContainer--professional">
+                                    <img src="img/AdobeIcons/aftereffects.png" alt="" class="promoSlider__icons">
+                                    <img src="img/AdobeIcons/illustrator.png" alt="" class="promoSlider__icons">
+                                    <img src="img/AdobeIcons/xd.png" alt="" class="promoSlider__icons">
+                                    <img src="img/AdobeIcons/lightroom-cc.png" alt="" class="promoSlider__icons">
+                                </div>
                             </div>
                             <div class="promoSlider__slide">
-                                3
+                                <div class="promoSlider__iconsContainer">
+                                    <img src="img/AdobeIcons/illustrator.png" alt="" class="promoSlider__icons">
+                                </div>
                             </div>
                         </div>
 

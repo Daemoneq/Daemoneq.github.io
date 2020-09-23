@@ -1,0 +1,115 @@
+.thirdScreen {
+  height: 100vh;
+  background-image: url(../img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 15% 35% 50%;
+      grid-template-rows: 15% 35% 50%;
+}
+
+.products {
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide__titlePhoto {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slide__photo {
+  height: 50px;
+  width: 50px;
+}
+
+.slide__title {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.slide__titleContinue {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.slide__text {
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.productsBar__list {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 20px 20px 0;
+  height: 70px;
+  width: 300px;
+  position: relative;
+  top: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateX(-240px);
+          transform: translateX(-240px);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.productsBar__img {
+  width: 50px;
+  height: 50px;
+}
+
+.productsBar__button {
+  height: 25px;
+  width: 15px;
+  background-color: black;
+}
+
+.productsBar__list--active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+@media (min-width: 900px) {
+  .thirdScreen {
+    background-image: url(../img/BackgroundImg/thirdScreenBg-pexels-olga-min.jpg);
+  }
+}
+/*# sourceMappingURL=fourthScreen.css.map */

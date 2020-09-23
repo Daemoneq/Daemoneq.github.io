@@ -106,4 +106,16 @@
 .sideBar__icon--unactive {
   opacity: 0;
 }
+
+@media (min-width: 900px) {
+  .sideBar {
+    display: none;
+  }
+  .sideBarMenu {
+    display: none;
+  }
+  .darkArea {
+    display: none;
+  }
+}
 /*# sourceMappingURL=sidebar.css.map */

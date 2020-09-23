@@ -1,0 +1,38 @@
+.secondScreen{
+    height: 100vh;
+    background-image: url(../img/BackgroundPhoneImg/secondScreenBg-pexels-jayant-kulkarni.jpg);
+    background-size: 100% 100%;        background-size: cover;
+    background-position: right center;        background-repeat: no-repeat;  
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5% 75% 20%;
+}
+
+.about{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    &__title{
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 20px 0 0 0;
+    }&__text{
+        margin: 20px 0 0 0;
+        font-size: 1.15rem;
+    }
+}
+
+@media(min-width: 900px){
+    .secondScreen{
+        background-image: url(../img/BackgroundImg/secondScreenBg-pexels-jayant-kulkarni-min.jpg);
+    }
+    .about__title{
+        font-size: 1.8rem*1.4;
+    }
+    .about__text{
+        font-size: 1.15rem*1.4;
+    }
+}

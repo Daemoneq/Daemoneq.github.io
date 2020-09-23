@@ -1,0 +1,117 @@
+
+.firstScreen{
+    height: 100vh;
+    background-image: url(../img/BackgroundPhoneImg/firstScreenBg-pexels-tetyana.jpg);
+    background-size: 100% 100%;        background-size: cover;
+    background-position: right center;        background-repeat: no-repeat;
+    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 25% 70% 5%;
+}
+
+.test{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-end;
+}
+.centerInfo{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-weight: bold;
+    }&__biggerTitle{
+        font-size: 2.4rem;
+        display: block;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+    }&__text{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 15px 0 0 0;
+        width: 200px;
+    }&__button{
+        margin: 30px 0 0 0;
+        font-size: 1.6rem;
+        height: 56px;
+        width: 80%;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: rgba(0,0,0,.7);
+    }
+}
+
+.topBar{
+    position: relative;
+    top: 30px;
+    left: 10%;
+    right: 10%;
+    width: 97vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        margin: 0 0 0 20px;
+    }&__logoImg{
+        height: 100px;
+        width: 170px;
+    }&__menuContainer{
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+        border-bottom: solid 2px black;
+        width: 600px;
+        margin: 0 50px 0 0;
+    }&__menuUl{
+        display: flex;
+        align-items: center;
+    }&__menuItems{
+        margin: 20px;
+    }&__menuLink{
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 900px){
+    *{
+        font-size: 19px;
+    }
+    .topBar__menuContainer{
+        display: flex;
+    }
+    .firstScreen{
+        max-width: 100%;
+    }
+    .topBar__logoImg{
+        width: 170px*1.2;
+        height: 100px*1.2;
+    }
+    .centerInfo{
+        height: 100%;
+        align-items: flex-end;
+        width: 450px;
+    }
+    .centerInfo__title{
+        margin: 40px 0 0 0;
+    }
+    .centerInfo__text{
+        text-align: right;
+        width: 400px;
+        margin: 20px 0 20px 0;
+    }
+    .centerInfo__button{
+        width: 250px;
+        height: 56px;   
+    }
+}
