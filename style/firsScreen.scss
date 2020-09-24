@@ -1,7 +1,7 @@
 
 .firstScreen{
     height: 100vh;
-    background-image: url(../img/BackgroundPhoneImg/firstScreenBg-pexels-tetyana.jpg);
+    background-image: url(../img/BackgroundPhoneImg/firstScreenBgPhone-pexels-tetyana.jpg);
     background-size: 100% 100%;        background-size: cover;
     background-position: right center;        background-repeat: no-repeat;
     
@@ -92,6 +92,7 @@
     }
     .firstScreen{
         max-width: 100%;
+        background-image: url(../img/BackgroundImg/firstScreenBg-pexels-tetyana-min.jpg);
     }
     .topBar__logoImg{
         width: 170px*1.2;
