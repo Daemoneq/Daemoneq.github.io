@@ -1,0 +1,154 @@
+.thirdScreen{
+    height: 100vh;
+    background-image: url(../img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
+    background-size: 100% 100%;        background-size: cover;
+    background-position: left center;        background-repeat: no-repeat; 
+
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 15% 35% 50%;
+}
+
+
+
+.products{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    &__containerPhoto{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }&__icon{
+        height: 50px;
+        width: 50px;
+    }&__photo{
+        display: none;
+    }&__title{
+        font-size: 2rem;
+        text-align: left;
+    }&__titleContinue{
+        font-size: 1.2rem;
+        display: block;
+    }&__text{
+        margin: 30px auto 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+.productsBar{
+    &__list{
+        background-color: rgba(0,0,0,.3);
+        border-radius: 0 20px 20px 0;
+        height: 70px;
+        width: 300px;   
+        position: relative;
+        top: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-240px);
+        transition: transform .5s ease-in-out;
+    }&__items{
+
+    }&__icons{
+        width: 50px;
+        height: 50px;
+    }&__button{
+        height: 25px;
+        width: 15px;
+        position: relative;
+        right: 5px;
+        transition: ease 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }&__icon{
+        font-size: 25px;
+        transform-origin: center;
+        color: rgba(255, 255, 255, .7);
+    }
+}
+
+.productsBar__button-active{
+    transform: rotate(0.5turn);
+    
+}
+
+
+.productsBar__list--active{
+    transform: translateX(0px);
+}
+
+
+@media(min-width: 900px){
+    .thirdScreen{
+        background-image: url(../img/BackgroundImg/thirdScreenBg-pexels-olga-min.jpg);
+    }
+    .productsBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productsBar__list{
+        transform: translateX(0);
+        height: 100px;
+        width: 500px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;  
+        align-self: center;
+        margin: 0 0 150px 0;
+        background-color: transparent;;
+    }
+    .productsBar__icons{
+        width: 50px*1.5;
+        height: 50px*1.5;
+    }
+    .productsBar__button{
+        display: none;
+    }
+    .products{
+        width: 900px;
+        justify-self: center; 
+        height: 310px; 
+        border-bottom: 3px black solid;
+    }
+    .slide__containerPhoto{
+        width: 50%;
+    }.slide__icon{
+        display: none;
+    }
+    .slide{
+        position: relative;
+        
+    }
+    .slide__photo{
+        display: block;
+        height: 280px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .slide__title{
+        width: 100%;
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+    .slide__titleContinue{
+        width: 50%;
+        text-align: center;
+    }
+    .slide__text{
+        margin: 30px auto 100px 0;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}

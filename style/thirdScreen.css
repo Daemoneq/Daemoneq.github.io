@@ -1,0 +1,217 @@
+.thirdScreen {
+  height: 100vh;
+  background-image: url(../img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  -ms-grid-rows: 15% 35% 50%;
+      grid-template-rows: 15% 35% 50%;
+}
+
+.products {
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide__containerPhoto {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slide__icon {
+  height: 50px;
+  width: 50px;
+}
+
+.slide__photo {
+  display: none;
+}
+
+.slide__title {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.slide__titleContinue {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.slide__text {
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.productsBar__list {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 20px 20px 0;
+  height: 70px;
+  width: 300px;
+  position: relative;
+  top: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateX(-240px);
+          transform: translateX(-240px);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.productsBar__icons {
+  width: 50px;
+  height: 50px;
+}
+
+.productsBar__button {
+  height: 25px;
+  width: 15px;
+  position: relative;
+  right: 5px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productsBar__icon {
+  font-size: 25px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.productsBar__button-active {
+  -webkit-transform: rotate(0.5turn);
+          transform: rotate(0.5turn);
+}
+
+.productsBar__list--active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+@media (min-width: 900px) {
+  .thirdScreen {
+    background-image: url(../img/BackgroundImg/thirdScreenBg-pexels-olga-min.jpg);
+  }
+  .productsBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .productsBar__list {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    height: 100px;
+    width: 500px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 0 150px 0;
+    background-color: transparent;
+  }
+  .productsBar__icons {
+    width: 75px;
+    height: 75px;
+  }
+  .productsBar__button {
+    display: none;
+  }
+  .products {
+    width: 900px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 310px;
+    border-bottom: 3px black solid;
+  }
+  .slide__containerPhoto {
+    width: 50%;
+  }
+  .slide__icon {
+    display: none;
+  }
+  .slide {
+    position: relative;
+  }
+  .slide__photo {
+    display: block;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .slide__title {
+    width: 100%;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .slide__titleContinue {
+    width: 50%;
+    text-align: center;
+  }
+  .slide__text {
+    margin: 30px auto 100px 0;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=thirdScreen.css.map */

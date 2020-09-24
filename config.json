@@ -41,6 +41,12 @@
       "css": "twitter",
       "code": 61593,
       "src": "fontawesome"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59392,
+      "src": "fontawesome"
     }
   ]
 }

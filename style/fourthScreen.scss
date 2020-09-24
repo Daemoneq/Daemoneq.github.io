@@ -1,78 +1,159 @@
-.thirdScreen{
+.fourthScreen{
     height: 100vh;
-    background-image: url(../img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
+    background-image: url(../img/BackgroundPhoneImg/fourthScreenBgPhone-pexels-scott.jpg);
     background-size: 100% 100%;        background-size: cover;
-    background-position: left center;        background-repeat: no-repeat; 
+    background-position: right center;        background-repeat: no-repeat; 
     
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 15% 35% 50%;
+    grid-template-rows: 10% 50% 40%;
 }
 
-
-
-.products{
+.promotions{
     height: 100%;
     width: 100%;
+    background-color: rgba(255,255,255,.7);
     grid-column: 2/3;
     grid-row: 2/3;
-}
-.slide{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    &__titlePhoto{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }&__photo{
-        height: 50px;
-        width: 50px;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        width: 70%;
+        text-align: center;
+        margin: 0 0 70px 0;
     }&__title{
         font-size: 2rem;
-        text-align: left;
-    }&__titleContinue{
-        font-size: 1.2rem;
-        display: block;
+        margin: 5% 0 5% 0;
+        font-weight: normal;
     }&__text{
-        margin: 30px auto 0 auto;
-        text-align: center;
         width: 80%;
+    }&__button{
+        padding: 7px 40px;
+        margin: 10% 0 5% 0;
+        border: none;
+        background-color: rgba(69, 155, 82, .7);
+        color: white;
+        box-shadow: rgba(0,0,0,.5) 4px 4px 15px;
     }
-}
-
-.productsBar{
-    &__list{
-        background-color: rgba(0,0,0,.3);
-        border-radius: 0 20px 20px 0;
-        height: 70px;
-        width: 300px;   
-        position: relative;
-        top: 450px;
+    &__card{
+        position: absolute;
+        bottom: -50%;
+        left: 15%;
+        height: 70%;
+        width: 70%;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, .5);
+        background-color: rgba(69, 155, 82, .7);
+    }&__iconsContainer{
+        height: 70%;
+        width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
-        transform: translateX(-240px);
-        transition: transform .5s ease-in-out;
-    }&__items{
-
-    }&__img{
+    }&__4icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }&__icon{
         width: 50px;
         height: 50px;
-    }&__button{
-        height: 25px;
-        width: 15px;
-        background-color: black;
+        margin: 12px;
+    }&__nav{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255,.8);
+    }&__navButton1{
+        width: 20px;
+        height: 20px;
+        border: rgba(0,0,0,.3) solid 2px;
+        border-radius: 100%;
+        margin: 10px;
+    }&__navButton2{
+        width: 20px;
+        height: 20px;
+        border: rgba(0,0,0,.3) solid 2px;
+        border-radius: 100%;
+        margin: 10px;
+    }&__navButton3{
+        width: 20px;
+        height: 20px;
+        border: rgba(0,0,0,.3) solid 2px;
+        border-radius: 100%;
+        margin: 10px;
     }
 }
 
-.productsBar__list--active{
-    transform: translateX(0px);
+.promoSlider{
+    &__iconsContainer--professional{
+        width: 80%;
+        margin-left:  auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }&__icons{
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
 }
 
-
 @media(min-width: 900px){
-    .thirdScreen{
-        background-image: url(../img/BackgroundImg/thirdScreenBg-pexels-olga-min.jpg);
+    .fourthScreen{
+        background-image: url(../img/BackgroundImg/fourthScreenBg-pexels-scott-min.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promotions{
+        width: 700px;
+        height: 500px;
+        margin: 0 100px 0 0;
+        // flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .promotions__container{
+        width: 500px;
+        height: 100%;
+        
+    }
+    .promotions__title{
+        text-align: right;
+        font-size: 2rem*1.5;
+        width: 60%;
+        margin: 5% 60px 5% auto;
+        border-bottom: 2px black solid;
+    }
+    .promotions__titleProf{
+        width: 80%;
+    }
+    .promotions__text{
+        text-align: right;
+        width: 80%;
+        font-size: 1rem*1.4;
+        margin: 0 60px 0 auto;
+    }
+    .promotions__button{
+        margin: 10% 60px 5% auto;
+        font-size: 1rem*1.4;
+        padding: 13px 60px;
+    }
+    .promotions__card{
+    position: absolute;
+    bottom: 10%;
+    left: -100px;
+    width: 300px;
+    height: 400px;
+    }
+    .promoSlider__icons{
+        width: 50px*1.5;
+        height: 50px*1.5;
     }
 }

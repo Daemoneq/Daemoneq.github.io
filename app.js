@@ -13,6 +13,8 @@ function handleProductsBar() {
     } else {
         productsBar__list.classList.remove("productsBar__list--active")
     }
+
+    productsBar__button.classList.toggle("productsBar__button-active")
     sideBarCounter += 1;
 }
 
@@ -91,3 +93,10 @@ function handleButton3() {
 promotions__navButton1.addEventListener("click", handleButton1)
 promotions__navButton2.addEventListener("click", handleButton2)
 promotions__navButton3.addEventListener("click", handleButton3)
+
+
+
+
+
+// rotate on click
+
