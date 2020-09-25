@@ -1,4 +1,5 @@
 .fourthScreen{
+    position: relative;
     height: 100vh;
     background-image: url(../img/BackgroundPhoneImg/fourthScreenBgPhone-pexels-scott.jpg);
     background-size: 100% 100%;        background-size: cover;
@@ -35,6 +36,7 @@
         border: none;
         background-color: rgba(69, 155, 82, .7);
         color: white;
+        cursor: pointer;
         box-shadow: rgba(0,0,0,.5) 3px 3px 10px;
     }
     &__card{
@@ -73,18 +75,21 @@
         border: rgba(0,0,0,.3) solid 2px;
         border-radius: 100%;
         margin: 10px;
+        cursor: pointer;    
     }&__navButton2{
         width: 20px;
         height: 20px;
         border: rgba(0,0,0,.3) solid 2px;
         border-radius: 100%;
         margin: 10px;
+        cursor: pointer;
     }&__navButton3{
         width: 20px;
         height: 20px;
         border: rgba(0,0,0,.3) solid 2px;
         border-radius: 100%;
         margin: 10px;
+        cursor: pointer;
     }
 }
 

@@ -1,4 +1,5 @@
 .thirdScreen {
+  position: relative;
   height: 100vh;
   background-image: url(../img/BackgroundPhoneImg/thirdScreenBg-pexels-olga.jpg);
   background-size: 100% 100%;
@@ -98,6 +99,7 @@
 .productsBar__icons {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 .productsBar__button {

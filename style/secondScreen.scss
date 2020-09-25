@@ -1,4 +1,5 @@
 .secondScreen{
+    position: relative;
     height: 100vh;
     background-image: url(../img/BackgroundPhoneImg/secondScreenBg-pexels-jayant-kulkarni.jpg);
     background-size: 100% 100%;        background-size: cover;
@@ -25,6 +26,11 @@
     }
 }
 
+.navBtnTopBottom{
+    display: none
+}
+
+
 @media(min-width: 900px){
     .secondScreen{
         background-image: url(../img/BackgroundImg/secondScreenBg-pexels-jayant-kulkarni-min.jpg);
@@ -34,5 +40,18 @@
     }
     .about__text{
         font-size: 1.15rem*1.4;
+    }
+    .navBtnTopBottom{
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        &__navBtn{
+            margin: 10px 0 0 0;
+        }
+    }
+    .navBtn--white{
+        color: #fff;
     }
 }

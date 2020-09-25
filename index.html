@@ -23,22 +23,24 @@
     <div class="darkArea"></div>
     <button class="sideBar">
         <i class="sideBar__icon icon-menu"></i>
-        <p class="sideBar__menu">Menu</p>
+        <a href="#home" class="sideBar__homeLink">
+            <p class="sideBar__menu">Home</p>
+        </a>
     </button>
     <nav class="sideBarMenu">
         <ul class="sideBarMenu__list">
             <li class="sideBarMenu__items">
-                <a href="#" class="sideBarMenu__item">
+                <a href="#about" class="sideBarMenu__item">
                     About
                 </a>
             </li>
             <li class="sideBarMenu__items">
-                <a href="#" class="sideBarMenu__item">
+                <a href="#products" class="sideBarMenu__item">
                     Products
                 </a>
             </li>
             <li class="sideBarMenu__items">
-                <a href="#" class="sideBarMenu__item">
+                <a href="#promotions" class="sideBarMenu__item">
                     Promotions
                 </a>
             </li>
@@ -48,7 +50,7 @@
     <!-- MAIN APP -->
 
     <!-- FIRST SCREEN -->
-    <div class="firstScreen">
+    <div class="firstScreen" id="home">
         <!-- TOPBAR -->
         <nav class="topBar">
             <span class="topBar__logo">
@@ -57,17 +59,17 @@
             <div class="topBar__menuContainer">
                 <ul class="topBar__menuUl">
                     <li class="topBar__menuItems">
-                        <a href="#" class="topBar__menuLink">
+                        <a href="#about" class="topBar__menuLink">
                             About
                         </a>
                     </li>
                     <li class="topBar__menuItems">
-                        <a href="#" class="topBar__menuLink">
+                        <a href="#products" class="topBar__menuLink">
                             Products
                         </a>
                     </li>
                     <li class="topBar__menuItems">
-                        <a href="#" class="topBar__menuLink">
+                        <a href="#promotions" class="topBar__menuLink">
                             Promotions
                         </a>
                     </li>
@@ -96,8 +98,9 @@
         </div>
     </div>
 
+
     <!-- SECOND SCREEN -->
-    <div class="secondScreen">
+    <div class="secondScreen" id="about">
         <section class="about">
             <h2 class="about__title">
                 "Adobe, it's possible..."
@@ -111,10 +114,14 @@
                 vulputate. Cras sed laoreet augue, id cursus est. Donec sed condimentum enim. Nam hendrerit egestas.
             </p>
         </section>
+        <div class="navBtnTopBottom">
+            <a href="#home" class="navBtnTopBottom__navBtn">Home</a>
+            <a href="#products" class="navBtnTopBottom__navBtn">Products</a>
+        </div>
     </div>
 
     <!-- THIRD SCREEN -->
-    <div class="thirdScreen">
+    <div class="thirdScreen" id="products">
         <section class="products">
 
             <!-- SLIDER -->
@@ -226,10 +233,14 @@
             </li>
         </ul>
         <!-- </nav> -->
+        <div class="navBtnTopBottom">
+            <a href="#about" class="navBtnTopBottom__navBtn navBtn--white">About</a>
+            <a href="#promotions" class="navBtnTopBottom__navBtn navBtn--white">Promotions</a>
+        </div>
     </div>
 
     <!-- FOURTH SCREEN -->
-    <div class="fourthScreen">
+    <div class="fourthScreen" id="promotions">
         <div class="promotions">
             <div class="promotions__container">
                 <div class="promoSlider">
@@ -323,6 +334,9 @@
 
                 </div>
             </div>
+        </div>
+        <div class="navBtnTopBottom">
+            <a href="#products" class="navBtnTopBottom__navBtn navBtn--white">Products</a>
         </div>
     </div>
     <script src="app.js"></script>
