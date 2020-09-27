@@ -1,4 +1,4 @@
-
+@import "./_var&colors";
 .firstScreen{
     position: relative;
     height: 100vh;
@@ -42,14 +42,19 @@
         width: 200px;
     }&__button{
         margin: 30px 0 0 0;
-        font-size: 1.6rem;
         height: 56px;
         width: 80%;
         border-radius: 20px;
-        border: none;
-        color: white;
         background-color: rgba(0,0,0,.7);
         cursor: pointer;
+    }&__link{
+        font-size: 1.6rem;
+        height: 100%;
+        width: 100%;
+        color: $secondFontColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

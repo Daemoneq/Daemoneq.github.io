@@ -1,0 +1,8 @@
+$fontColor: black;
+$secondFontColor: white;
+
+@mixin felxCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

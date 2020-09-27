@@ -1,3 +1,4 @@
+@import "./_var&colors";
 .fourthScreen{
     position: relative;
     height: 100vh;
@@ -35,7 +36,7 @@
         margin: 10% 0 5% 0;
         border: none;
         background-color: rgba(69, 155, 82, .7);
-        color: white;
+        color: $secondFontColor;
         cursor: pointer;
         box-shadow: rgba(0,0,0,.5) 3px 3px 10px;
     }

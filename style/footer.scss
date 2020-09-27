@@ -1,0 +1,44 @@
+@import "./_var&colors";
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }&__author{
+        color: $secondFontColor;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }&__name{
+        color: $secondFontColor;
+        font-size: .5rem;
+        margin: 0 20px 0 0;
+    }&__date{
+        color: $secondFontColor;
+        font-size: .5rem;
+        margin: 0 0 0 20px;
+    }&__text{
+        margin: 2px 0 0 0;
+        color: $secondFontColor;
+        font-size: .5rem;
+    }
+}
+
+@media(min-width: 900px){
+    .footer__name{
+        font-size: .7rem;
+    }
+    .footer__date{
+        font-size: .7rem;
+    }
+    .footer__text{
+        font-size: .7rem;
+    }
+}

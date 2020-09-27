@@ -68,14 +68,27 @@
 
 .centerInfo__button {
   margin: 30px 0 0 0;
-  font-size: 1.6rem;
   height: 56px;
   width: 80%;
   border-radius: 20px;
-  border: none;
-  color: white;
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
+}
+
+.centerInfo__link {
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topBar {
@@ -172,4 +185,4 @@
     height: 56px;
   }
 }
-/*# sourceMappingURL=firsScreen.css.map */
+/*# sourceMappingURL=firstScreen.css.map */
